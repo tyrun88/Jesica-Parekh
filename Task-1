@@ -35,4 +35,9 @@ In the GitHub repo, configure the following under Settings → Secrets and varia
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 
-Hint: In this same repo I give you a ci-cd.yml file and this one is incorrect so read the task properly and fix the workfile also, Thanks
+🔍 Candidate's Task
+Ask the candidate:
+- This CI/CD pipeline is broken or misconfigured in several places. Please go through the workflow file and:
+- Identify the problems.
+- Fix the YAML to make it successfully deploy a Vue.js app to ECS via GitHub Actions.
+
