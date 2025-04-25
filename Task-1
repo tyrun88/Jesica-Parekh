@@ -1,0 +1,14 @@
+Deploying a Dockerized Vue.js Application to AWS ECS using GitHub Actions CI/CD Pipeline.
+
+The candidate will:
+
+- Build a basic Vue.js app.
+- Create a Docker image of the app.
+- Push the image to AWS ECR.
+- Deploy the containerized app to AWS ECS.
+- Automate this entire workflow using GitHub Actions.
+
+You can present it like this:
+
+Task Subject: CI/CD for a Dockerized Frontend App
+Goal: Set up a full CI/CD pipeline to build and deploy a Vue.js web application to AWS ECS via GitHub Actions.
