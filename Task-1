@@ -1,14 +1,38 @@
-Deploying a Dockerized Vue.js Application to AWS ECS using GitHub Actions CI/CD Pipeline.
+ Deploying a Dockerized Vue.js Application to AWS ECS Using GitHub Actions CI/CD Pipeline
 
-The candidate will:
+🎯 Task Subject
+CI/CD for a Dockerized Frontend App
 
-- Build a basic Vue.js app.
-- Create a Docker image of the app.
-- Push the image to AWS ECR.
-- Deploy the containerized app to AWS ECS.
-- Automate this entire workflow using GitHub Actions.
+🧩 Objective
+Set up a full CI/CD pipeline that automatically builds a Vue.js application, packages it as a Docker image, pushes it to AWS Elastic Container Registry (ECR), and deploys it to AWS Elastic Container Service (ECS) using GitHub Actions.
 
-You can present it like this:
+🔧 Candidate Will Perform the Following Tasks
 
-Task Subject: CI/CD for a Dockerized Frontend App
-Goal: Set up a full CI/CD pipeline to build and deploy a Vue.js web application to AWS ECS via GitHub Actions.
+- Set Up the Project
+- Create a basic Vue.js app using Vite or Vue CLI.
+- Ensure it runs locally (npm run dev).
+- Dockerize the App
+- Write a multi-stage Dockerfile to:
+- Build the Vue.js app
+- Serve it using Nginx in production
+- Push Docker Image to AWS ECR
+- Tag the Docker image
+- Push it to ECR using AWS CLI or via GitHub Actions
+- Deploy to AWS ECS
+- Ensure the ECS service uses the new image
+- Force a new deployment via the pipeline
+- Automate the Process
+- Create a GitHub Actions workflow (.github/workflows/ci-cd.yml) that:
+- Installs dependencies
+- Builds the Vue app
+- Builds the Docker image
+- Pushes it to ECR
+- Triggers ECS deployment
+
+🔒 Required GitHub Secrets
+In the GitHub repo, configure the following under Settings → Secrets and variables → Actions:
+
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+
+Hint: In this same repo I give you a ci-cd.yml file and this one is incorrect so read the task properly and fix the workfile also, Thanks
